@@ -256,6 +256,16 @@ public class SimpleTest {
     }
 
     @Test
+    public void getSchema() throws IOException {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource("user.avsc").getFile());
+        Schema schema = new Schema.Parser().parse(file);
+        System.out.println("schema : " + schema.toString());
+
+        System.out.println(schema.getProp("primary-key"));
+    }
+
+    @Test
     public void avroSerialize() throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("user.avsc").getFile());

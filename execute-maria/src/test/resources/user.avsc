@@ -2,6 +2,7 @@
   "namespace": "example.avro",
   "type": "record",
   "name": "User",
+  "primary-key": "1,2",
   "fields": [
     {
       "name": "name",
