@@ -1,0 +1,79 @@
+{
+  "type": "record",
+  "name": "AirQuality",
+  "namespace": "net.jw.twin.db",
+  "fields": [
+    {
+      "name": "id",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "name": "date_time",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "local-timestamp-millis"
+        }
+      ]
+    },
+    {
+      "name": "measure_position_id",
+      "type": "long"
+    },
+    {
+      "name": "pm10_value",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "java-class": "java.lang.Integer"
+        }
+      ]
+    },
+    {
+      "name": "pm10_flag",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "pm25_value",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "java-class": "java.lang.Integer"
+        }
+      ]
+    },
+    {
+      "name": "pm25_flag",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "o3_value",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "java-class": "java.lang.Integer"
+        }
+      ]
+    },
+    {
+      "name": "o3_flag",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ]
+}

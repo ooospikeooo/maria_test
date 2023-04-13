@@ -1,0 +1,19 @@
+{
+  "namespace": "example.avro",
+  "type": "record",
+  "name": "Compare",
+  "fields": [
+    {
+      "name": "name3",
+      "type": "string"
+    },
+    {
+      "name": "id3",
+      "type": "int"
+    },
+    {
+      "name": "score3",
+      "type": "int"
+    }
+  ]
+}
